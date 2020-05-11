@@ -1,0 +1,5 @@
+# exercism.io housekeeping
+.exercism/
+
+# Visual Studio Code
+.vscode/
