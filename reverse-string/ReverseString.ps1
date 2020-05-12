@@ -11,7 +11,7 @@ Function Get-ReverseString {
 
     .EXAMPLE
     Get-ReverseString "PowerShell"
-    
+
     This will return llehSrewoP
 
     .EXAMPLE
@@ -24,6 +24,8 @@ Function Get-ReverseString {
         [Parameter(Position=1, ValueFromPipeline=$true)]
         [string]$Forward
 	)
-	
-	Throw "Function not implemented"
+
+    $r = $Forward.ToCharArray()
+    [array]::Reverse($r)
+    return -join($r)
 }
